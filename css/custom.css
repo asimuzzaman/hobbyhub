@@ -1,0 +1,200 @@
+body {
+  color: #333;
+}
+
+.box-grid .review-blk {
+  display: inline-block;
+  vertical-align: middle;
+}
+/**
+ * Massive modules
+ */
+
+/*container class*/
+.container {
+  max-width: 80em;
+  margin: 0 auto;
+}
+
+
+/**
+ * Simple modules/elements
+ */
+
+/*button styles*/
+.pure-button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.pure-button-secondary {
+  background: rgb(66, 184, 221);
+}
+/*Review Block*/
+.review-img {
+  width: 200px;
+  height: 200px;
+}
+
+.review-blk {
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+/*center align pure img*/
+.pure-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Category head*/
+.category-head {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/*Inline list*/
+.inline-list {
+	display: inline-block;
+  margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.inline-list > li {
+	display: inline-block;
+}
+
+/*List no style*/
+.list-style-none {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Navbar Logo*/
+.nav-brand {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2em;
+  color: #073e62;
+}
+
+/*Navbar*/
+.navbar {
+  position: relative;
+  padding: 7px 16px;
+}
+
+/*Nav Slide */
+.nav-slide {
+  box-sizing: border-box;
+  padding: 7px 16px 14px 16px;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  color: #073e62;
+}
+
+.nav-slide-blk {
+  box-sizing: border-box;
+  padding: 16px 7px;
+}
+
+.nav-slide-blk:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+
+.nav-slide .nav-slide-blk + .nav-slide-blk {
+  padding-left: 2em;
+}
+
+/*
+.nav-slide-blk > ul {
+  padding-left: 2em;
+}
+*/
+
+.nav-slide-blk > ul a {
+  text-decoration: none;
+  color: #073e62;
+}
+
+.nav-slide-blk > ul a:hover,
+.nav-slide-blk > ul a:active {
+  color: #0078E7;
+}
+
+.nav-slide-blk ul > li {
+  margin-top: 0.7em;
+}
+
+.nav-category {
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.gameplay {
+  width: 100%;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/**
+ * Helper Classes
+ */
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-muted {
+  color: #777;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
