@@ -30,12 +30,12 @@
                     <ul class="inline-list pull-right clearfix">
                         <!--If logged in -->
                         <li class="text-muted">logged in as <a href="#" class="pure-button pure-button-primary">Farah</a></li>
-                        <li><button type="button" class="pure-button">Menu</button></li>
+                        <li><button type="button" class="pure-button" id="menu-toggle">Menu</button></li>
                         <!--If not logged in--><!--
                         <li><a class="pure-button pure-button-primary" href="#">Log in</a></li>
                         -->
                     </ul>
-                    <div class="nav-slide pure-g">
+                    <div class="nav-slide pure-g" style="display:none;">
                       <!--category-->
                       <div class="pure-u-1-3 nav-slide-blk text-center">
                         <h3>Food</h3>
@@ -43,6 +43,7 @@
                           <li><a href="#">Featured Foods</a></li>
                           <li><a href="#">Restaurant of the week!</a></li>
                           <li><a href="#">Top Restaurants</a></li>
+                          <li><a href="#" class="category-toggle" data-target="food-category">Categories</a></li>
                         </ul>
                       </div>
                       <!--category-->
@@ -52,6 +53,7 @@
                           <li><a href="#">Featured Books</a></li>
                           <li><a href="#">Book of the month!</a></li>
                           <li><a href="#">Search your Book</a></li>
+                          <li><a href="#" class="category-toggle" data-target="audio-category">Categories</a></li>
                         </ul>
                       </div>
                       <!--category-->
@@ -61,8 +63,36 @@
                           <li><a href="#">Featured Games</a></li>
                           <li><a href="#">Games of the month!</a></li>
                           <li><a href="#">Trending Gameplays</a></li>
+                          <li><a href="#" class="category-toggle" data-target="games-category">Categories</a></li>
                         </ul>
                       </div>
+                    </div>
+                    <div class="nav-category clear-both" id="food-category" style="display:none;">
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                    </div>
+                    <div class="nav-category clear-both" id="audio-category" style="display:none;">
+                      <a href="#" class="pure-button">Merkal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                    </div>
+                    <div class="nav-category clear-both" id="games-category" style="display:none;">
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Megal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
+                      <a href="#" class="pure-button">Mrigal</a>
                     </div>
                 </nav>
             </div>
@@ -278,5 +308,21 @@
           </div>        
 
         </div>
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript">
+          $(function() {
+            $(".category-toggle").click(function() {
+              //$(".nav-category").slideUp("fast");
+              var handle = $(this).data("target");
+              $(".nav-category:not(#"+handle+")").slideUp("fast");
+              $("#"+handle).slideToggle("normal");
+            });
+
+            $("#menu-toggle").click(function() {
+              $(".nav-category").slideUp("fast");
+              $(".nav-slide").slideToggle("fast");
+            });
+          });
+        </script>
     </body>
 </html>

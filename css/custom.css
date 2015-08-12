@@ -20,6 +20,38 @@ body {
 /**
  * Simple modules/elements
  */
+.thread-message {
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: #DEEDFF;
+}
+
+.thread-owner {
+  margin-top: 12px;
+}
+
+.post-list {
+  display: block;
+  list-style: none;
+  text-align: left;
+  border: 1px solid #bbb;
+}
+
+.post-list a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.post-list a:hover {
+  color: #0078e7;
+}
+
+.post-list h3 {
+  margin: 0px;
+  padding: 16px;
+  border: 1px solid #ddd;
+}
 
 /*button styles*/
 .pure-button-secondary {
